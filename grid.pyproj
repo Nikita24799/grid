@@ -23,6 +23,13 @@
   <ItemGroup>
     <Compile Include="grid.py" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="pilt1.png" />
+    <Content Include="pilt2.png" />
+    <Content Include="pilt3.png" />
+    <Content Include="pilt4.png" />
+    <Content Include="pilt5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
        Visual Studio and specify your pre- and post-build commands in
