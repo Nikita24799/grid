@@ -54,19 +54,21 @@ lbox.insert(5, "Пушкин")
 for element in foto_list:
     lbox.insert(END,element)
 
-lbox.pack()
+lbox.grid(row=0,column=0)
 lbox.bind("<<ListboxSelect>>",list_to_txt)
 txt=Text(win,height=4,width=20,wrap=WORD)
-txt.pack()
+txt.grid(row=1,column=1)
 txt.bind("<Return>",txt_to_list)
 can=Canvas(win,width=130,height=200,bg="gold")
+can.grid(row=1,column=2,columnspan=2)
 pc = PhotoImage(file="")#220px-PelobatesFuscus.png
 panel = Label(win, image = pc)
-panel.pack(side = "bottom", fill = "both", expand = "yes")
+panel.grid(row=1, column=3)
 foto=PhotoImage(file="pilt1.png")
-btn=Button(text='Справка', command=opisanie).pack()#, command=op
+btn=Button(text='Справка', command=opisanie)
+btn.grid(row=1, column=2)
 opis=Label(win, text="", width=50, height=20)
-opis.pack()
-can.pack()
+opis.grid(row=4, column=5)
+can.grid(row=3, column=5)
 win.mainloop()
 
